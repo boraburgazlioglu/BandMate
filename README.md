@@ -7,7 +7,7 @@ BandMate is a mobile application designed for bands to manage their rehearsals, 
 ## Team Info
 
 - Hasan Can Sağlam - Project Coordinator
-- Turhan Can Ada - Documentation and Submission Lead 
-- Bora Burgazlıoğlu - Testing and Quality Assurance Lead
+- Turhan Can Ada - Testing and Quality Assurance Lead
+- Bora Burgazlıoğlu - Documentation and Submission Lead
 - Ümit Berke Polat - Presenting and Communication Lead
 - Atakan Öztürk - Integration and Repository Lead
