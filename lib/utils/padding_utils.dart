@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
-/// Uygulama genelinde kullanılacak standartlaştırılmış padding ve boşluk değerlerini içerir.
-/// Bu sabitler, UI'ın tutarlılığını ve okunabilirliğini artırır.
+/// standard paddings for use of app in general
+
 class AppSpacing {
-  // --- SABİT DEĞERLER (Standard Constants) ---
+  // standard constants
 
   static const double xs = 4.0;
   static const double sm = 8.0;
@@ -11,7 +11,7 @@ class AppSpacing {
   static const double lg = 24.0;
   static const double xl = 32.0;
 
-  // --- 1. EDGEINSETS: Tüm Yönlerde Padding'ler (iç dolgu/kenar boşluğu) ---
+  // paddings for all directions
 
   /// 4.0
   static const EdgeInsets allXS = EdgeInsets.all(xs);
@@ -25,45 +25,45 @@ class AppSpacing {
   /// 24.0
   static const EdgeInsets allLG = EdgeInsets.all(lg);
 
-  // --- 2. EDGEINSETS: Yönlü Padding'ler ---
+  // paddings with specific directions
 
-  /// Yatay (Horizontal) 16.0
+  /// horizontal-16.0
   static const EdgeInsets horizontalMD = EdgeInsets.symmetric(horizontal: md);
 
-  /// Yatay (Horizontal) 8.0
+  /// horizontal 8.0
   static const EdgeInsets horizontalSM = EdgeInsets.symmetric(horizontal: sm);
 
-  /// Dikey (Vertical) 16.0
+  /// vertical 16.0
   static const EdgeInsets verticalMD = EdgeInsets.symmetric(vertical: md);
 
-  /// Dikey (Vertical) 8.0
+  /// vertical 8.0
   static const EdgeInsets verticalSM = EdgeInsets.symmetric(vertical: sm);
 
-  // --- 3. SIZEDBOX: Dikey Boşluklar (Öğeler Arası Boşluk) ---
+  // sizedbox - vertical
 
-  /// 8.0 Dikey Boşluk
+  /// vertical gap-8.0
   static const Widget verticalSpacerSM = SizedBox(height: sm);
 
-  /// 16.0 Dikey Boşluk (En sık kullanılan)
+  /// vertical gap-16.0
   static const Widget verticalSpacerMD = SizedBox(height: md);
 
-  /// 24.0 Dikey Boşluk
+  /// vertical gap-24.0
   static const Widget verticalSpacerLG = SizedBox(height: lg);
 
-  /// 32.0 Dikey Boşluk
+  /// vertical gap-32.0
   static const Widget verticalSpacerXL = SizedBox(height: xl);
 
-  // --- 4. SIZEDBOX: Yatay Boşluklar ---
+  // sizedbox - horizontal
 
-  /// 8.0 Yatay Boşluk
+  /// horizontal gap-8.0
   static const Widget horizontalSpacerSM = SizedBox(width: sm);
 
-  /// 16.0 Yatay Boşluk
+  /// horizontal gap-16.0
   static const Widget horizontalSpacerMD = SizedBox(width: md);
 
 
-  // --- 5. ÖZEL KULLANIM: Ekran Ana Padding'i ---
+  // main screen padding
 
-  /// Ekranlar için önerilen ana padding: Yatay 16.0, Dikey 24.0 (AppBar altı için)
+  /// main padding - horizontal-16.0 - vertical-24.0 - for below appbar
   static const EdgeInsets screenPadding = EdgeInsets.fromLTRB(md, lg, md, md);
 }
